@@ -1,12 +1,15 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const path = require("path")
 const pool= require("./db");
 require('dotenv').config();
 
 // middleware
 app.use(cors());
 app.use(express.json());
+
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 // ROUTES
 // get a test from screen id
@@ -19,6 +22,11 @@ app.get("/test/:id", async (req, res) => {
     console.error('error: ', err.message)
   }
 })
+
+// Handles any requests that don't match the ones above
+app.get('*', (req,res) =>{
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
 app.listen(5000, () => {
   console.log("server has started on port 5000");
