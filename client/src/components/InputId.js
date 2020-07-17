@@ -34,7 +34,7 @@ const InputId = () => {
 
   return (
     <Fragment>
-      <h2 className="text-center mt-5"> Enter your 4-letter code below to begin your smell test</h2>
+      <h2 className="text-center mt-5" > Enter your 4-letter code below to begin your smell test</h2>
       <form className="d-flex mt-5" onSubmit={onSubmitForm}>
         <input 
           type="text" 
