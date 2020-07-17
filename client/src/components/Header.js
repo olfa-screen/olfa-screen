@@ -1,10 +1,11 @@
 import React from 'react';
+import logo from '../logo.png';
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-light" style={{backgroundColor: '#92e7e6ff'}}>
+    <nav className="navbar navbar-light">
       <a className="navbar-brand" href="#">
-        Olfa Screen
+        <img src={logo} height='70' width='150'/>
       </a>
       <span className="navbar-text">
         COVID-19 smell test

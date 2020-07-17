@@ -34,7 +34,7 @@ const InputId = () => {
 
   return (
     <Fragment>
-      <h1 className="text-center mt-5"> Enter ScreenID</h1>
+      <h2 className="text-center mt-5"> Enter your 4-letter code below to begin your smell test</h2>
       <form className="d-flex mt-5" onSubmit={onSubmitForm}>
         <input 
           type="text" 
@@ -46,6 +46,7 @@ const InputId = () => {
           <button className="btn btn-success">Enter</button>
         </Link>
       </form>
+      <h4 className="text-center mt-5">New Loss of Smell is a common, early symptom of COVID-19</h4>
     </Fragment>
   );
 }
