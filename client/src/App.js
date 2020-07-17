@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom"; // route diff
 import "./styles.css";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import InputId from "./components/InputId";
 import Test from "./components/Test";
 import Results from "./components/Results";
@@ -17,6 +18,8 @@ function App() {
         <Route path="/" exact component={InputId} />
         <Route path="/test" component={Test} />
         <Route path="/results" component={Results} />
+        <br/>
+        <Footer />
       </div>
     </Router>
   );
