@@ -9,7 +9,7 @@ const Test = () => {
   };
 
   return (
-    <Fragment>
+    <Fragment >
       <h3 className="text-center"> Select the scent of each sticker.</h3>
       <form onSubmit={onSubmitForm}>
         <h5 className="mt-4">Sticker 1</h5>

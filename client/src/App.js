@@ -11,17 +11,21 @@ import Results from "./components/Results";
 // router maps specific url paths to specific components that will load on the page
 function App() {
   return (
+    <div className="page-container container">
+    <div className="content-wrap">
+
     <Router>
-      <div className="container">
         <Header />
         <br/>
         <Route path="/" exact component={InputId} />
         <Route path="/test" component={Test} />
         <Route path="/results" component={Results} />
-        <br/>
-        <Footer />
-      </div>
+        <br />
     </Router>
+    </div>
+
+    <Footer />
+    </div>
   );
 }
 
